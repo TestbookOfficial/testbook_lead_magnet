@@ -21,14 +21,15 @@
 <h2 style="font-size: 30px; color: #111827; margin: 0 0 14px; font-weight: 800;">Congratulations!</h2>
 <p style="font-size: 19px; color: #1f2937; margin: 0 0 22px; font-weight: bold;">You Submitted it Successfully</p>
 
-<div style="text-align: left; background: #f1f5ff; border-radius: 18px; padding: 22px 22px; color: #1f2937; font-size: 17px; line-height: 1.8; font-weight: 600;">
-<h3 style="font-size: 20px; color: #dc2626; margin: 0 0 14px; font-weight: 900; text-align: center;">Imp: Join Our Telegram Channel To Get</h3>
-➜ Most Asked Questions in Last 10 Years
-➜ 50+ Free Mock Test
-➜ Heavy Discount on Testbook All Products
-➜ Last 10 Years Previous Year Papers
-➜ Latest Govt Job Updates Direct in Your Inbox
-
+<div style="text-align:left;background:#f1f5ff;border-radius:18px;padding:22px;color:#1f2937;font-size:16px;line-height:1.7;font-weight:600;">
+  <h3 style="font-size:18px;color:#dc2626;margin:0 0 16px;font-weight:900;text-align:center;">
+    Imp: Join Our Telegram Channel To Get
+  </h3>
+  <div style="margin-bottom:8px;">➜ Most Asked Questions in Last 10 Years</div>
+  <div style="margin-bottom:8px;">➜ 50+ Free Mock Test</div>
+  <div style="margin-bottom:8px;">➜ Heavy Discount on Testbook All Products</div>
+  <div style="margin-bottom:8px;">➜ Last 10 Years Previous Year Papers</div>
+  <div>➜ Latest Govt Job Updates Direct in Your Inbox</div>
 </div>
 <a style="display: block; width: 100%; margin-top: 24px; background: #229ED9; color: #ffffff; text-decoration: none; border-radius: 16px; padding: 17px 0; font-size: 20px; font-weight: 800; box-shadow: 0 12px 25px rgba(34,158,217,0.32);" href="https://t.me/sarkariupdatesbytestbook" target="_blank">
   Join Now!
@@ -47,7 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
       popup.style.display = "flex";
 
       setTimeout(function () {
-        window.open("https://t.me/sarkariupdatesbytestbook", "_blank");
+        try {
+          window.top.location.href = "https://t.me/sarkariupdatesbytestbook";
+        } catch (e) {
+          window.location.href = "https://t.me/sarkariupdatesbytestbook";
+        }
       }, 10000);
     });
   }
